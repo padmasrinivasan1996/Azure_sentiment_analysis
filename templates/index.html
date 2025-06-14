@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Azure Sentiment Analyzer</h1>
+
+    <form method="POST">
+        <textarea name="text" rows="6" cols="60" placeholder="Type a sentence to analyze">{{ text }}</textarea><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+{% if sentiment %}
+    <h2>Result</h2>
+    <p><strong>Sentiment:</strong> {{ sentiment }}</p>
+    <p><strong>Confidence Scores:</strong></p>
+    <ul>
+        <li>Positive: {{ confidence['positive'] }}</li>
+        <li>Neutral: {{ confidence['neutral'] }}</li>
+        <li>Negative: {{ confidence['negative'] }}</li>
+    </ul>
+{% endif %}
+</body>
+</html>
