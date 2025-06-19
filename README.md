@@ -62,7 +62,7 @@ This is the screenshots of the output
 
 ![output2](https://github.com/user-attachments/assets/62902e9b-f3bb-46a4-b6d3-57dee067a4d3)
 
-## **Future Enhancements**  
-🚀 Add database support for storing user inputs  
-🚀 Implement a more advanced sentiment analysis model  
-🚀 Deploy the app on a cloud platform
+## Future Enhancements  
+  * Add database support for storing user inputs  
+  * Implement a more advanced sentiment analysis model  
+  * Deploy the app on a cloud platform
